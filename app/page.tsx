@@ -30,7 +30,7 @@ export default async function Home() {
           <h1 className="text-4xl sm:text-6xl font-bold ">Lazy Wordler</h1>
           <h2 className="text-xl sm:text-2xl">Get wordle answers without the work</h2>
         </div>
-        <div className="flex flex-row space-x-10">
+        <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10">
           <Tile wordle={prevWordle} />
           <Tile wordle={curWordle} />
           <Tile wordle={tomWordle} />
