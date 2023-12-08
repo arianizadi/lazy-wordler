@@ -27,8 +27,8 @@ export default async function Home() {
     <main>
       <div className="flex flex-col justify-center items-center h-[100svh] w-screen overflow-hidden text-white space-y-10">
         <div>
-          <h1 className="text-6xl font-bold">Lazy Wordler</h1>
-          <h2 className="text-2xl">Get wordle answers without the work</h2>
+          <h1 className="text-4xl sm:text-6xl font-bold ">Lazy Wordler</h1>
+          <h2 className="text-xl sm:text-2xl">Get wordle answers without the work</h2>
         </div>
         <div className="flex flex-row space-x-10">
           <Tile wordle={prevWordle} />
@@ -42,7 +42,7 @@ export default async function Home() {
 
 function Tile({ wordle }: { wordle: WordleJSON }) {
   return (
-    <div className="bg-zinc-800 p-10 rounded-lg text-center text-2xl font-bold flex flex-col space-y-5">
+    <div className="bg-zinc-800 p-10 rounded-lg text-center text-md sm:text-lg md:text-2xl font-bold flex flex-col space-y-5">
       <h1>{wordle.print_date}</h1>
       <h1>{wordle.solution}</h1>
     </div>
