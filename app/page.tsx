@@ -1,3 +1,5 @@
+export const revalidate = 86400
+
 async function getWordle(date: Date) {
   const file = date.toISOString().slice(0, 10)
   const baseURL = "https://www.nytimes.com/svc/wordle/v2/"
