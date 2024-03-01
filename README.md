@@ -18,4 +18,4 @@ Click on the link below to open the app in your browser.
 
 ## How it works
 
-I started with reverse engineering the Wordle website to find out how the game works. If you look in the networking tab you can see that it reaches out to an endpoint that matches the current date. After finding this all I needed was to create a Next.js project that utilizes the server side rendering to fetch the data from the endpoint and display it on the page. The serverside rendering is important because it bypasses the CORS policy that would not allow client side requests to an endpoint on a different domain.
+I started with reverse engineering the Wordle website to find out how the game works. If you look in the networking tab you can see that it reaches out to an endpoint that matches the current date. After finding this all I needed was to create a Next.js project that utilizes the server-side rendering to fetch the data from the endpoint and display it on the page. The server-side rendering is important because it bypasses the CORS policy that would not allow client-side requests to an endpoint on a different domain.
