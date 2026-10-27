@@ -14,11 +14,11 @@ async function getWordle(date: Date) {
 }
 
 interface WordleJSON {
-  id: Number,
-  solution: String,
-  print_date: String,
-  days_since_launch: Number,
-  editor: String
+  id: number,
+  solution: string,
+  print_date: string,
+  days_since_launch: number,
+  editor: string
 }
 
 export default async function Home() {
